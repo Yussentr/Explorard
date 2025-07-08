@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadatos -->
+    <title>Servicios Turísticos Premium en República Dominicana | Explora RD</title>
+    <meta name="description" content="Servicios turísticos de primera clase en República Dominicana: alojamiento de lujo, transporte VIP, tours exclusivos y experiencias personalizadas.">
+    <meta name="keywords" content="servicios turísticos República Dominicana, hoteles lujo, transporte turístico, tours exclusivos, guías especializados">
+    <meta name="author" content="Explora RD">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-bs-theme="light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> 
+                    <span class="brand-text">Explora RD</span>
+                    <small class="brand-slogan d-block d-md-inline">| Tu puerta al paraíso caribeño</small>
+                </a>
+                <div class="d-flex align-items-center order-lg-3">
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" class="btn btn-outline-secondary me-2" title="Cambiar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enlaces.html">Enlaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary rounded-pill px-3" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop'); height: 60vh;">
+            <div class="hero-content">
+                <h1>Servicios Premium</h1>
+                <p class="lead">Experiencias personalizadas para viajeros exigentes</p>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <section class="py-3 bg-light">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Servicios</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Introducción -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Servicios Exclusivos</h2>
+                        <p class="lead mb-5">En Explora RD nos especializamos en crear experiencias únicas y personalizadas. Nuestro equipo de expertos locales se encarga de cada detalle para que tu viaje sea perfecto desde el primer momento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Principales -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios Principales</h2>
+                <div class="row">
+                    <!-- Alojamiento -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="card shadow hover-effect h-100">
+                            <div class="card-body text-center">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-building" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                                </div>
+                                <h3 class="card-title">Alojamiento de Lujo</h3>
+                                <p class="card-text">Seleccionamos los mejores hoteles, resorts y villas que se adapten perfectamente a tu estilo y presupuesto.</p>
+                                
+                                <div class="text-start mt-4">
+                                    <h6><i class="bi bi-star-fill text-warning me-2"></i>Incluye:</h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Resorts todo incluido 5 estrellas</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Villas privadas con personal</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Hoteles boutique exclusivos</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Eco-lodges únicos</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Apartamentos de lujo</li>
+                                    </ul>
+                                    
+                                    <h6><i class="bi bi-gift text-primary me-2"></i>Beneficios Especiales:</h6>
+                                    <ul class="list-unstyled small text-muted">
+                                        <li>• Upgrades gratuitos cuando disponible</li>
+                                        <li>• Early check-in / Late check-out</li>
+                                        <li>• Amenidades de bienvenida</li>
+                                        <li>• Acceso a áreas VIP</li>
+                                    </ul>
+                                </div>
+                                
+                                <button class="btn btn-primary mt-3" onclick="showServiceDetails('alojamiento')">Ver paquetes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transporte -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="card shadow hover-effect h-100">
+                            <div class="card-body text-center">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-car-front-fill" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                                </div>
+                                <h3 class="card-title">Transporte VIP</h3>
+                                <p class="card-text">Viaja con comodidad y estilo desde tu llegada hasta tu partida con nuestro servicio de transporte premium.</p>
+                                
+                                <div class="text-start mt-4">
+                                    <h6><i class="bi bi-car-front text-primary me-2"></i>Opciones Disponibles:</h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Traslados aeropuerto VIP</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Vehículos de lujo con chofer</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Alquiler de autos premium</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Helicopteros y jets privados</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Yates y catamaranes</li>
+                                    </ul>
+                                    
+                                    <h6><i class="bi bi-shield-check text-success me-2"></i>Garantías:</h6>
+                                    <ul class="list-unstyled small text-muted">
+                                        <li>• Choferes certificados y bilingües</li>
+                                        <li>• Vehículos con aire acondicionado</li>
+                                        <li>• Seguro completo incluido</li>
+                                        <li>• Disponibilidad 24/7</li>
+                                    </ul>
+                                </div>
+                                
+                                <button class="btn btn-primary mt-3" onclick="showServiceDetails('transporte')">Ver opciones</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tours y Excursiones -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="card shadow hover-effect h-100">
+                            <div class="card-body text-center">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-compass" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                                </div>
+                                <h3 class="card-title">Tours Exclusivos</h3>
+                                <p class="card-text">Descubre los secretos mejor guardados de República Dominicana con nuestros guías expertos y tours personalizados.</p>
+                                
+                                <div class="text-start mt-4">
+                                    <h6><i class="bi bi-map text-primary me-2"></i>Tipos de Tours:</h6>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Tours culturales e históricos</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Aventuras de ecoturismo</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Experiencias gastronómicas</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Tours fotográficos profesionales</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Aventuras deportivas extremas</li>
+                                    </ul>
+                                    
+                                    <h6><i class="bi bi-people text-info me-2"></i>Modalidades:</h6>
+                                    <ul class="list-unstyled small text-muted">
+                                        <li>• Tours privados personalizados</li>
+                                        <li>• Grupos pequeños (máx. 8 personas)</li>
+                                        <li>• Tours de día completo o medio día</li>
+                                        <li>• Expediciones de varios días</li>
+                                    </ul>
+                                </div>
+                                
+                                <button class="btn btn-primary mt-3" onclick="showServiceDetails('tours')">Explorar tours</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Adicionales -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Servicios Adicionales</h2>
+                <div class="row">
+                    <!-- Gastronomía -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-cup-hot text-warning mb-3" style="font-size: 3rem;"></i>
+                                <h5 class="card-title">Experiencias Gastronómicas</h5>
+                                <p class="card-text small">Cenas privadas con chefs, tours gastronómicos y clases de cocina dominicana.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showServiceDetails('gastronomia')">Más info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spa y Bienestar -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-heart-pulse text-danger mb-3" style="font-size: 3rem;"></i>
+                                <h5 class="card-title">Spa & Bienestar</h5>
+                                <p class="card-text small">Tratamientos de spa exclusivos, yoga en la playa y retiros de bienestar.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showServiceDetails('spa')">Más info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actividades Deportivas -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-bicycle text-success mb-3" style="font-size: 3rem;"></i>
+                                <h5 class="card-title">Deportes y Aventura</h5>
+                                <p class="card-text small">Golf, deportes acuáticos, senderismo, escalada y deportes extremos.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showServiceDetails('deportes')">Más info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eventos Especiales -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect h-100">
+                            <div class="card-body text-center">
+                                <i class="bi bi-calendar-event text-info mb-3" style="font-size: 3rem;"></i>
+                                <h5 class="card-title">Eventos Especiales</h5>
+                                <p class="card-text small">Bodas en la playa, lunas de miel, celebraciones corporativas y eventos privados.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showServiceDetails('eventos')">Más info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de Reserva -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Proceso de Reserva Simple</h2>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row text-center">
+                            <!-- Paso 1 -->
+                            <div class="col-md-3 mb-4">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                        <h3 class="mb-0">1</h3>
+                                    </div>
+                                    <h5>Consulta</h5>
+                                    <p class="text-muted">Cuéntanos tus preferencias, fechas y presupuesto.</p>
+                                </div>
+                            </div>
+
+                            <!-- Paso 2 -->
+                            <div class="col-md-3 mb-4">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                        <h3 class="mb-0">2</h3>
+                                    </div>
+                                    <h5>Propuesta</h5>
+                                    <p class="text-muted">Recibe un itinerario personalizado en 24 horas.</p>
+                                </div>
+                            </div>
+
+                            <!-- Paso 3 -->
+                            <div class="col-md-3 mb-4">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                        <h3 class="mb-0">3</h3>
+                                    </div>
+                                    <h5>Confirmación</h5>
+                                    <p class="text-muted">Confirmamos reservas y ajustamos detalles finales.</p>
+                                </div>
+                            </div>
+
+                            <!-- Paso 4 -->
+                            <div class="col-md-3 mb-4">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                        <h3 class="mb-0">4</h3>
+                                    </div>
+                                    <h5>Disfruta</h5>
+                                    <p class="text-muted">Relájate mientras nosotros nos encargamos de todo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"El servicio de Explora RD superó todas mis expectativas. Cada detalle fue perfecto, desde el transporte VIP hasta las excursiones privadas."</p>
+                                <footer class="blockquote-footer">María González <cite title="Source Title">Madrid, España</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"Nuestra boda en Punta Cana fue un sueño hecho realidad. El equipo coordinó todo a la perfección y nos permitió disfrutar sin preocupaciones."</p>
+                                <footer class="blockquote-footer">John & Sarah Miller <cite title="Source Title">New York, USA</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"Los tours culturales fueron fascinantes. Los guías locales conocían cada rincón y nos mostraron lugares que jamás habríamos encontrado solos."</p>
+                                <footer class="blockquote-footer">Pierre Dubois <cite title="Source Title">París, Francia</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2>¿Listo para planificar tu viaje perfecto?</h2>
+                        <p class="lead mb-4">Nuestros expertos están listos para crear una experiencia única y personalizada solo para ti.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a href="contacto.html" class="btn btn-light btn-lg me-md-2">Solicitar cotización</a>
+                            <a href="destinos.html" class="btn btn-outline-light btn-lg">Ver destinos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Explora RD. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="index.html" class="text-white text-decoration-none">Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        function showServiceDetails(service) {
+            const serviceDetails = {
+                'alojamiento': {
+                    title: 'Alojamiento de Lujo - Paquetes Disponibles',
+                    content: `
+                        <h6>🏨 Resorts Todo Incluido:</h6>
+                        <ul>
+                            <li>Bahia Principe Grand Punta Cana - desde $280/noche</li>
+                            <li>Dreams Suites Golf Resort - desde $320/noche</li>
+                            <li>Iberostar Selection Bávaro - desde $350/noche</li>
+                        </ul>
+                        <h6>🏖️ Villas Privadas:</h6>
+                        <ul>
+                            <li>Villa oceanfront con chef personal - desde $1,200/noche</li>
+                            <li>Penthouse en Cap Cana - desde $800/noche</li>
+                        </ul>
+                    `
+                },
+                'transporte': {
+                    title: 'Transporte VIP - Opciones y Tarifas',
+                    content: `
+                        <h6>✈️ Traslados Aeropuerto:</h6>
+                        <ul>
+                            <li>Sedan de lujo (1-3 personas) - $95</li>
+                            <li>SUV Premium (4-6 personas) - $145</li>
+                            <li>Van VIP (7-12 personas) - $195</li>
+                        </ul>
+                        <h6>🚁 Transporte Exclusivo:</h6>
+                        <ul>
+                            <li>Helicóptero privado - desde $2,500/hora</li>
+                            <li>Jet privado - desde $8,500/vuelo</li>
+                        </ul>
+                    `
+                },
+                'tours': {
+                    title: 'Tours Exclusivos - Experiencias Únicas',
+                    content: `
+                        <h6>🌊 Tours Acuáticos:</h6>
+                        <ul>
+                            <li>Isla Saona en catamarán privado - $1,200/grupo</li>
+                            <li>Snorkeling en arrecifes vírgenes - $185/persona</li>
+                        </ul>
+                        <h6>🏛️ Tours Culturales:</h6>
+                        <ul>
+                            <li>Zona Colonial con historiador - $95/persona</li>
+                            <li>Ruta del cacao y café - $125/persona</li>
+                        </ul>
+                    `
+                },
+                'gastronomia': {
+                    title: 'Experiencias Gastronómicas Premium',
+                    content: `
+                        <h6>👨‍🍳 Cenas Privadas:</h6>
+                        <ul>
+                            <li>Chef privado en villa - desde $350/cena</li>
+                            <li>Cena romántica en la playa - $285/pareja</li>
+                        </ul>
+                        <h6>🍽️ Tours Gastronómicos:</h6>
+                        <ul>
+                            <li>Ruta gastronómica Santo Domingo - $95/persona</li>
+                            <li>Clase de cocina dominicana - $125/persona</li>
+                        </ul>
+                    `
+                },
+                'spa': {
+                    title: 'Spa & Bienestar - Tratamientos Exclusivos',
+                    content: `
+                        <h6>💆‍♀️ Tratamientos Spa:</h6>
+                        <ul>
+                            <li>Masaje de parejas en la playa - $285/sesión</li>
+                            <li>Ritual de relajación completo - $195/persona</li>
+                        </ul>
+                        <h6>🧘‍♀️ Bienestar:</h6>
+                        <ul>
+                            <li>Yoga privado al amanecer - $125/sesión</li>
+                            <li>Retiro de meditación - $350/día</li>
+                        </ul>
+                    `
+                },
+                'deportes': {
+                    title: 'Deportes y Aventura - Actividades Extremas',
+                    content: `
+                        <h6>🏌️‍♂️ Golf:</h6>
+                        <ul>
+                            <li>Teeth of the Dog (Pete Dye) - $485/ronda</li>
+                            <li>Corales Golf Course - $385/ronda</li>
+                        </ul>
+                        <h6>🏄‍♀️ Deportes Acuáticos:</h6>
+                        <ul>
+                            <li>Kitesurf privado - $185/clase</li>
+                            <li>Pesca deportiva de lujo - $2,850/día</li>
+                        </ul>
+                    `
+                },
+                'eventos': {
+                    title: 'Eventos Especiales - Celebraciones Únicas',
+                    content: `
+                        <h6>💒 Bodas en la Playa:</h6>
+                        <ul>
+                            <li>Ceremonia íntima (hasta 20 invitados) - desde $8,500</li>
+                            <li>Boda de lujo (hasta 100 invitados) - desde $25,000</li>
+                        </ul>
+                        <h6>🏢 Eventos Corporativos:</h6>
+                        <ul>
+                            <li>Retiro ejecutivo - desde $1,250/persona</li>
+                            <li>Convención empresarial - cotización personalizada</li>
+                        </ul>
+                    `
+                }
+            };
+
+            const details = serviceDetails[service];
+            if (details) {
+                const alertDiv = document.createElement('div');
+                alertDiv.className = 'alert alert-info alert-dismissible fade show position-fixed';
+                alertDiv.style.cssText = `
+                    top: 100px;
+                    right: 20px;
+                    z-index: 9999;
+                    max-width: 450px;
+                    max-height: 80vh;
+                    overflow-y: auto;
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+                `;
+                
+                alertDiv.innerHTML = `
+                    <h5 class="alert-heading">${details.title}</h5>
+                    ${details.content}
+                    <hr>
+                    <p class="mb-0 small"><strong>Nota:</strong> Todos los precios son referenciales. <a href="contacto.html" class="alert-link">Solicita una cotización personalizada</a>.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                
+                document.body.appendChild(alertDiv);
+                
+                setTimeout(() => {
+                    if (alertDiv.parentNode) {
+                        alertDiv.remove();
+                    }
+                }, 15000);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,482 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Para el modo oscuro */
+:root {
+    --primary-color: #42b0a4;
+    --secondary-color: #28a745;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --navbar-bg: #ffffff;
+    --hero-overlay: rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] {
+    --primary-color: #0d6efd;
+    --secondary-color: #198754;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --navbar-bg: #1a1a1a;
+    --hero-overlay: rgba(0, 0, 0, 0.5);
+}
+
+/* Configuración general */
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar*/
+.navbar {
+    background-color: var(--navbar-bg) !important;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand .bi {
+    color: var(--primary-color) !important;
+}
+
+.brand-text {
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--primary-color);
+}
+
+.brand-slogan {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hero seccion */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://everythingpuntacana.com/wp-content/uploads/2018/09/playa-bavaro-punta-cana.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+}
+
+.hero-content p.lead {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Títulos de sección */
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+/* Cards con efectos hover */
+.card {
+    background-color: var(--card-bg);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.hover-effect:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.card-text {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Iconos de servicios */
+.service-icon {
+    font-size: 4rem;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.service-icon:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+    animation: pulse 1s infinite;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background: #42b0a4;
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #36998d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px #42b0a4;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link.facebook {
+    background: #3b5998;
+}
+
+.social-link.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-link.twitter {
+    background: #1da1f2;
+}
+
+.social-link.youtube {
+    background: #ff0000;
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* Dark mode toggle */
+#darkModeToggle {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* Lista personalizada */
+.list-group-item {
+    background-color: transparent;
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateX(10px);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #343a40, #495057);
+    color: white;
+}
+
+/* Efectos de texto dinámico */
+.text-effect:hover {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p.lead {
+        font-size: 1.1rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .brand-slogan {
+        display: none !important;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .service-icon {
+        font-size: 3rem;
+    }
+}
+
+/* Carousel personalizado */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 3;
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+/* Modales personalizados */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--primary-color);
+}
+
+/* Efectos especiales */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Modo oscuro Bootstrap*/
+[data-bs-theme="dark"] .bg-light {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+}
+
+[data-bs-theme="dark"] .bg-transparent {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+/* Ensure list items have proper text color in dark mode */
+[data-bs-theme="dark"] .list-group-item {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border-color: rgba(255, 255, 255, 0.125) !important;
+}
+
+[data-bs-theme="dark"] .list-group-item:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Dark mode text color fixes */
+[data-bs-theme="dark"] .text-dark {
+    color: var(--text-color) !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Ensure headings are visible in dark mode */
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6 {
+    color: var(--text-color) !important;
+}
+
+/* Dark mode form controls */
+[data-bs-theme="dark"] .form-control {
+    background-color: var(--card-bg) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: var(--text-color) !important;
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+    background-color: var(--card-bg) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+[data-bs-theme="dark"] .form-label {
+    color: var(--text-color) !important;
+}
+
+/* Dark mode navbar adjustments */
+[data-bs-theme="dark"] .navbar-nav .nav-link {
+    color: var(--text-color) !important;
+}
+
+[data-bs-theme="dark"] .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-bs-theme="dark"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Transiciones suaves para modo oscuro */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

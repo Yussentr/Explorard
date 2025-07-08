@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora RD - Descubre la Magia de República Dominicana | Turismo Premium</title>
+    <meta name="description" content="Descubre los mejores destinos turísticos de República Dominicana. Playas paradisíacas, cultura rica y aventuras únicas te esperan. Planifica tu viaje perfecto con Explora RD.">
+    <meta name="keywords" content="República Dominicana, turismo, Punta Cana, Santo Domingo, Samaná, playas, hoteles, tours, vacaciones, Caribe">
+    <meta name="author" content="Explora RD">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Explora RD - Turismo en República Dominicana">
+    <meta name="twitter:description" content="Descubre los mejores destinos turísticos de República Dominicana">
+    <meta name="twitter:image" content="https://everythingpuntacana.com/wp-content/uploads/2018/09/playa-bavaro-punta-cana.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+   
+</head>
+<body data-bs-theme="light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#heroCarousel">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> 
+                    <span class="brand-text">Explora RD</span>
+                    <small class="brand-slogan d-block d-md-inline">| Tu puerta al paraíso caribeño</small>
+                </a>
+                <div class="d-flex align-items-center order-lg-3">
+                    <!-- Modo oscuro -->
+                    <button id="darkModeToggle" class="btn btn-outline-secondary me-2" title="Cambiar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#heroCarousel">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enlaces.html">Enlaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary rounded-pill px-3" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-section" style="background-image: url('Img/img\ 5.jpg');">
+                        <div class="hero-content">
+                            <h1>Descubre la magia de <br>República Dominicana</h1>
+                            <p class="lead mt-3">Tu puerta al paraíso caribeño</p>
+                            <button class="btn btn-primary btn-lg mt-3" id="showWelcomeModal">¡Comienza tu aventura!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-section" style="background-image: url('Img/img 2.jpg');">
+                        <div class="hero-content">
+                            <h1>Playas de ensueño a tu alcance</h1>
+                            <p class="lead mt-3">Aguas cristalinas y arena blanca te esperan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-section" style="background-image: url('Img/img 3.jpg');">
+                        <div class="hero-content">
+                            <h1>Aventura y naturaleza sin límites</h1>
+                            <p class="lead mt-3">Explora la biodiversidad del Caribe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Sección ¿Por qué elegir RD? -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">¿Por qué elegir República Dominicana?</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Razones principales:</h4>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item border-0 bg-transparent">Playas paradisíacas con aguas cristalinas</li>
+                            <li class="list-group-item border-0 bg-transparent">Rica historia y cultura caribeña</li>
+                            <li class="list-group-item border-0 bg-transparent">Biodiversidad única en el Caribe</li>
+                            <li class="list-group-item border-0 bg-transparent">Hospitalidad dominicana reconocida mundialmente</li>
+                            <li class="list-group-item border-0 bg-transparent">Excelente relación calidad-precio</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Actividades imperdibles:</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item border-0 bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i>Avistamiento de ballenas en Samaná</li>
+                            <li class="list-group-item border-0 bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i>Explorar la Zona Colonial de Santo Domingo</li>
+                            <li class="list-group-item border-0 bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i>Relajarse en las playas de Punta Cana</li>
+                            <li class="list-group-item border-0 bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i>Aventuras en los 27 Charcos de Damajagua</li>
+                            <li class="list-group-item border-0 bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i>Disfrutar la vida nocturna en Boca Chica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Destinos -->
+        <section id="destinos" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Destinos Populares</h2>
+                <div class="row">
+                    <!-- Destino 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <img src="https://www.palladiumhotelgroup.com/es/guia-turistica/republica-dominicana/santo-domingo/playas/_jcr_content/root/responsivegrid/container_copy/container/image_487618484_copy_1764701411.coreimg.jpeg/1730893352504/palladium-hotel-group-santo-domingo-playa-palenque.jpeg" class="card-img-top" alt="Punta Cana">
+                            <div class="card-body">
+                                <h5 class="card-title">Punta Cana</h5>
+                                <p class="card-text">Playas de arena blanca, aguas cristalinas y resorts de lujo te esperan en el paraíso del Caribe.</p>
+                                <a href="#" class="btn btn-primary" onclick="showAlert('Punta Cana')">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Destino 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <img src="https://samanainn.com/uploads/0000/157/2024/07/29/pixelcut-export-1.jpeg" class="card-img-top" alt="Samaná">
+                            <div class="card-body">
+                                <h5 class="card-title">Samaná</h5>
+                                <p class="card-text">Naturaleza virgen, cascadas espectaculares y el avistamiento de ballenas jorobadas.</p>
+                                <a href="#" class="btn btn-primary" onclick="showAlert('Samaná')">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Destino 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <img src="https://i0.wp.com/bavarodigital.net/wp-content/uploads/2024/05/santo-domingo-ciudades-creativas-jpg.webp?resize=860%2C645&ssl=1" class="card-img-top" alt="Santo Domingo">
+                            <div class="card-body">
+                                <h5 class="card-title">Santo Domingo</h5>
+                                <p class="card-text">Sumérgete en la historia de la primera ciudad de América, con su encanto colonial y vibrante vida nocturna.</p>
+                                <a href="#" class="btn btn-primary" onclick="showAlert('Santo Domingo')">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="destinos.html" class="btn btn-outline-primary btn-lg">Ver Todos los Destinos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="service-icon mb-3 hover-effect">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h4>Alojamiento</h4>
+                        <p class="text-muted">Encuentra los mejores hoteles y resorts que se ajusten a tu presupuesto y estilo.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-icon mb-3 hover-effect">
+                            <i class="bi bi-car-front-fill"></i>
+                        </div>
+                        <h4>Transporte</h4>
+                        <p class="text-muted">Coordinamos traslados desde el aeropuerto y alquiler de vehículos para tu comodidad.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-icon mb-3 hover-effect">
+                            <i class="bi bi-compass"></i>
+                        </div>
+                        <h4>Tours y Excursiones</h4>
+                        <p class="text-muted">Descubre los secretos de la isla con nuestros guías expertos y tours personalizados.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="servicios.html" class="btn btn-outline-primary btn-lg">Ver Todos los Servicios</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Noticias -->
+        <section id="noticias" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Últimas Noticias y Artículos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <article class="card hover-effect">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Nuevos hoteles">
+                            <div class="card-body">
+                                <h5 class="card-title">Nuevos Resorts de Lujo en Punta Cana</h5>
+                                <p class="card-text">Descubre los últimos desarrollos hoteleros que elevan el estándar del turismo dominicano.</p>
+                                <small class="text-muted">Publicado el 1 de julio, 2025</small>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <article class="card hover-effect">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Temporada ballenas">
+                            <div class="card-body">
+                                <h5 class="card-title">Temporada de Ballenas 2025</h5>
+                                <p class="card-text">La temporada de avistamiento de ballenas jorobadas ya comenzó en Samaná.</p>
+                                <small class="text-muted">Publicado el 28 de junio, 2025</small>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <article class="card hover-effect">
+                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Gastronomía dominicana">
+                            <div class="card-body">
+                                <h5 class="card-title">Festival Gastronómico Dominicano</h5>
+                                <p class="card-text">Celebra los sabores auténticos de la cocina criolla en Santo Domingo.</p>
+                                <small class="text-muted">Publicado el 25 de junio, 2025</small>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="noticias.html" class="btn btn-outline-primary btn-lg">Ver Más Noticias</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Enlaces de Interés -->
+        <section id="enlaces" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Enlaces de Interés</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h4><i class="bi bi-youtube text-danger me-2"></i>Videos de República Dominicana</h4>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/cWadYyTMats" title="Descubre República Dominicana" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4><i class="bi bi-geo-alt text-primary me-2"></i>Ubicación en el Mapa</h4>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974045.4032890415!2d-71.2516515!3d18.735693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8838def1b6f5%3A0xa6020f24060df7e0!2sRep%C3%BAblica%20Dominicana!5e0!3m2!1ses!2sus!4v1704285600000!5m2!1ses!2sus" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="enlaces.html" class="btn btn-outline-primary btn-lg">Ver Más Recursos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contactanos" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Contáctanos</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                                <a href="mailto:info@explorar.com?subject=Consulta%20sobre%20turismo%20en%20RD&body=Hola,%20me%20interesa%20obtener%20más%20información%20sobre..." 
+                                   class="btn btn-outline-success btn-lg">
+                                    <i class="bi bi-envelope-fill me-2"></i>Enviar por Email
+                                </a>
+                            </div>
+                        </form>
+                        <div class="text-center mt-4">
+                            <p class="mb-2">Síguenos en nuestras redes sociales:</p>
+                            <div class="social-links">
+                                <a href="https://facebook.com/exploranerd" class="social-link facebook me-3" target="_blank">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://instagram.com/exploranerd" class="social-link instagram me-3" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://twitter.com/exploranerd" class="social-link twitter me-3" target="_blank">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="https://youtube.com/exploranerd" class="social-link youtube" target="_blank">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Explora RD. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-link text-white" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                        Políticas de Privacidad
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Bienvenida -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="welcomeModalLabel">¡Bienvenido a Explora RD!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="bi bi-geo-alt-fill text-primary" style="font-size: 3rem;"></i>
+                        <h4 class="mt-3">Tu aventura comienza aquí</h4>
+                        <p class="lead">Descubre los secretos mejor guardados de República Dominicana con nosotros. Desde playas paradisíacas hasta aventuras en la montaña, tenemos todo listo para tu viaje perfecto.</p>
+                        <p>¿Listo para explorar el paraíso caribeño?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Explorar más tarde</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="document.querySelector('#destinos').scrollIntoView({behavior: 'smooth'})">¡Empezar ahora!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Políticas de Privacidad -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Información que Recopilamos</h6>
+                    <p>En Explora RD, recopilamos información personal que usted nos proporciona voluntariamente a través de nuestros formularios de contacto, suscripciones y reservas.</p>
+                    
+                    <h6>2. Uso de la Información</h6>
+                    <p>Utilizamos su información para:</p>
+                    <ul>
+                        <li>Procesar sus reservas y consultas</li>
+                        <li>Enviarle información relevante sobre nuestros servicios</li>
+                        <li>Mejorar nuestros servicios y experiencia del usuario</li>
+                        <li>Cumplir con obligaciones legales</li>
+                    </ul>
+                    
+                    <h6>3. Protección de Datos</h6>
+                    <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción.</p>
+                    
+                    <h6>4. Cookies</h6>
+                    <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede configurar su navegador para rechazar cookies, aunque esto puede afectar la funcionalidad del sitio.</p>
+                    
+                    <h6>5. Contacto</h6>
+                    <p>Si tiene preguntas sobre esta política de privacidad, puede contactarnos en info@exploraRD.com</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

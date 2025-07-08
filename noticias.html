@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadatos -->
+    <title>Noticias y Artículos de Turismo en República Dominicana | Explora RD</title>
+    <meta name="description" content="Mantente informado con las últimas noticias del turismo en República Dominicana: nuevos destinos, hoteles, eventos, temporadas y tendencias de viaje.">
+    <meta name="keywords" content="noticias turismo República Dominicana, eventos, hoteles nuevos, temporadas turísticas, artículos de viaje">
+    <meta name="author" content="Explora RD">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-bs-theme="light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> 
+                    <span class="brand-text">Explora RD</span>
+                    <small class="brand-slogan d-block d-md-inline">| Tu puerta al paraíso caribeño</small>
+                </a>
+                <div class="d-flex align-items-center order-lg-3">
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" class="btn btn-outline-secondary me-2" title="Cambiar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enlaces.html">Enlaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary rounded-pill px-3" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop'); height: 60vh;">
+            <div class="hero-content">
+                <h1>Noticias y Tendencias</h1>
+                <p class="lead">Mantente al día con el mundo del turismo dominicano</p>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <section class="py-3 bg-light">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Noticias</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Noticias Destacadas -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Últimas Noticias</h2>
+                
+                <!-- Noticia Principal -->
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <article class="card shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Nuevos resorts" style="height: 400px; object-fit: cover;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-primary">DESTACADA</span>
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar me-1"></i>5 de julio, 2025
+                                    </small>
+                                </div>
+                                <h3 class="card-title">República Dominicana Rompe Récord de Turistas en 2025</h3>
+                                <p class="card-text lead">El país caribeño ha recibido más de 4.2 millones de visitantes en los primeros seis meses del año, superando las expectativas y consolidándose como el destino líder del Caribe.</p>
+                                <p class="card-text">
+                                    El Ministerio de Turismo reportó que el crecimiento del 18% respecto al año anterior se debe principalmente a la diversificación de la oferta turística, la mejora en la infraestructura hotelera y las nuevas rutas aéreas internacionales. Los destinos que más han contribuido a este éxito son Punta Cana con un 45% de las llegadas, seguido por Puerto Plata (25%) y Santo Domingo (20%).
+                                </p>
+                                <p class="card-text">
+                                    <strong>Datos destacados del informe:</strong>
+                                </p>
+                                <ul>
+                                    <li>4.2 millones de turistas (enero-junio 2025)</li>
+                                    <li>Crecimiento del 18% vs año anterior</li>
+                                    <li>Ingresos por $3.8 mil millones USD</li>
+                                    <li>Estadía promedio: 8.5 días</li>
+                                    <li>Gasto promedio: $1,250 por turista</li>
+                                </ul>
+                                <button class="btn btn-primary" onclick="readMore('record-turistas')">Leer artículo completo</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Grid de Noticias -->
+                <div class="row">
+                    <!-- Noticia 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="card shadow hover-effect h-100">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Nuevo resort" style="height: 250px;">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-success">HOTELES</span>
+                                    <small class="text-muted">3 de julio, 2025</small>
+                                </div>
+                                <h5 class="card-title">Hyatt Abre Nuevo Resort Ultra-Lujo en Cap Cana</h5>
+                                <p class="card-text">El grupo hotelero internacional inaugura su primera propiedad en República Dominicana con 180 suites oceanfront y un spa de clase mundial.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="readMore('hyatt-cap-cana')">Leer más</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Noticia 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="card shadow hover-effect h-100">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Ballenas" style="height: 250px;">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-info">NATURALEZA</span>
+                                    <small class="text-muted">1 de julio, 2025</small>
+                                </div>
+                                <h5 class="card-title">Temporada de Ballenas 2025 Supera Expectativas</h5>
+                                <p class="card-text">Más de 3,000 ballenas jorobadas han sido avistadas en Samaná, convirtiéndose en la temporada más exitosa de la última década.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="readMore('ballenas-2025')">Leer más</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Noticia 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="card shadow hover-effect h-100">
+                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Gastronomía" style="height: 250px;">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning">GASTRONOMÍA</span>
+                                    <small class="text-muted">28 de junio, 2025</small>
+                                </div>
+                                <h5 class="card-title">Festival Gastronómico Dominicano Atrae Chefs Internacionales</h5>
+                                <p class="card-text">La tercera edición del festival en Santo Domingo reunirá a 25 chefs michelin para celebrar la fusión culinaria dominicana.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="readMore('festival-gastronomico')">Leer más</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Noticia 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="card shadow hover-effect h-100">
+                            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2073&auto=format&fit=crop" class="card-img-top" alt="Aeropuerto" style="height: 250px;">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-danger">INFRAESTRUCTURA</span>
+                                    <small class="text-muted">26 de junio, 2025</small>
+                                </div>
+                                <h5 class="card-title">Nueva Terminal del Aeropuerto de Punta Cana</h5>
+                                <p class="card-text">La expansión permitirá recibir 2 millones de pasajeros adicionales por año, mejorando significativamente la experiencia del viajero.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="readMore('terminal-punta-cana')">Leer más</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Noticia 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="card shadow hover-effect h-100">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop" class="card-img-top" alt="Playa sustentable" style="height: 250px;">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-success">SOSTENIBILIDAD</span>
+                                    <small class="text-muted">24 de junio, 2025</small>
+                                </div>
+                                <h5 class="card-title">RD Líder en Turismo Sostenible del Caribe</h5>
+                                <p class="card-text">El país obtiene certificación internacional por sus prácticas de turismo responsable y conservación marina.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="readMore('turismo-sostenible')">Leer más</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>                    <!-- Noticia 6 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="card shadow hover-effect h-100">
+                            <img src="https://we.golf/uploads/trips/images/Teeth_of_the_Dog-golf_1.jpg" class="card-img-top" alt="Teeth of the Dog Golf Course" style="height: 250px;">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-primary">DEPORTES</span>
+                                    <small class="text-muted">22 de junio, 2025</small>
+                                </div>
+                                <h5 class="card-title">Campeonato PGA Tours Confirma Sede en Casa de Campo</h5>
+                                <p class="card-text">El prestigioso campo Teeth of the Dog albergará por primera vez un torneo oficial del PGA en marzo 2026.</p>
+                                <div class="mt-auto">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="readMore('pga-casa-campo')">Leer más</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Tendencias -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Tendencias de Viaje 2025</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title">¿Qué buscan los turistas en 2025?</h4>
+                                <p class="card-text">Basado en análisis de reservas y encuestas a visitantes internacionales.</p>
+                                
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <h6><i class="bi bi-trending-up text-success me-2"></i>En Aumento</h6>
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-arrow-up text-success me-2"></i>Ecoturismo (+35%)</li>
+                                            <li><i class="bi bi-arrow-up text-success me-2"></i>Turismo wellness (+28%)</li>
+                                            <li><i class="bi bi-arrow-up text-success me-2"></i>Experiencias gastronómicas (+22%)</li>
+                                            <li><i class="bi bi-arrow-up text-success me-2"></i>Tours culturales (+18%)</li>
+                                            <li><i class="bi bi-arrow-up text-success me-2"></i>Viajes multigeneracionales (+15%)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6><i class="bi bi-calendar-week text-primary me-2"></i>Comportamientos</h6>
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-check-circle text-info me-2"></i>Estadías más largas (8+ días)</li>
+                                            <li><i class="bi bi-check-circle text-info me-2"></i>Reservas con más anticipación</li>
+                                            <li><i class="bi bi-check-circle text-info me-2"></i>Preferencia por todo incluido</li>
+                                            <li><i class="bi bi-check-circle text-info me-2"></i>Búsqueda de autenticidad</li>
+                                            <li><i class="bi bi-check-circle text-info me-2"></i>Conciencia ambiental</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Mantente Informado</h2>
+                        <p class="lead mb-4">Suscríbete a nuestro boletín para recibir las últimas noticias del turismo dominicano directamente en tu correo.</p>
+                        
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <form id="newsletterForm" class="row g-3 align-items-center justify-content-center">
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control form-control-lg" id="newsletter-email" placeholder="Tu correo electrónico" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">Suscribirse</button>
+                                    </div>
+                                </form>
+                                <p class="text-muted small mt-3">
+                                    <i class="bi bi-shield-check me-1"></i>
+                                    Respetamos tu privacidad. Puedes cancelar la suscripción en cualquier momento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eventos Próximos -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Próximos Eventos</h2>
+                <div class="row">
+                    <!-- Evento 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-warning">AGOSTO 2025</span>
+                                    <i class="bi bi-calendar-event text-primary" style="font-size: 1.5rem;"></i>
+                                </div>
+                                <h5 class="card-title">Festival de Jazz en Casa de Campo</h5>
+                                <p class="card-text">Artistas internacionales se presentarán en el anfiteatro Altos de Chavón.</p>
+                                <small class="text-muted">15-17 de agosto</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Evento 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-info">SEPTIEMBRE 2025</span>
+                                    <i class="bi bi-water text-primary" style="font-size: 1.5rem;"></i>
+                                </div>
+                                <h5 class="card-title">Campeonato Mundial de Surf</h5>
+                                <p class="card-text">Las mejores olas de Playa Grande recibirán a surfistas de 30 países.</p>
+                                <small class="text-muted">20-25 de septiembre</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Evento 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-success">OCTUBRE 2025</span>
+                                    <i class="bi bi-tree text-primary" style="font-size: 1.5rem;"></i>
+                                </div>
+                                <h5 class="card-title">Feria Ecoturística Nacional</h5>
+                                <p class="card-text">Promoción del turismo sostenible y conservación ambiental en Jarabacoa.</p>
+                                <small class="text-muted">10-12 de octubre</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Explora RD. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="index.html" class="text-white text-decoration-none">Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        // Función para leer más artículos
+        function readMore(articleId) {
+            const articles = {
+                'record-turistas': {
+                    title: 'República Dominicana Rompe Récord de Turistas',
+                    content: `
+                        <p><strong>Santo Domingo, 5 de julio de 2025</strong> - El sector turístico dominicano celebra cifras históricas que posicionan al país como el destino más exitoso del Caribe en 2025.</p>
+                        
+                        <h6>Factores del Éxito:</h6>
+                        <ul>
+                            <li><strong>Nuevas rutas aéreas:</strong> 15 nuevas conexiones directas desde Europa y Norteamérica</li>
+                            <li><strong>Infraestructura mejorada:</strong> Modernización de aeropuertos y carreteras</li>
+                            <li><strong>Diversificación:</strong> Crecimiento del ecoturismo y turismo cultural</li>
+                            <li><strong>Seguridad:</strong> Implementación de protocolos sanitarios avanzados</li>
+                        </ul>
+                        
+                        <h6>Proyecciones para 2025:</h6>
+                        <p>Se espera cerrar el año con 8.5 millones de visitantes, generando ingresos por $7.2 mil millones USD y creando 45,000 nuevos empleos directos e indirectos.</p>
+                    `
+                },
+                'hyatt-cap-cana': {
+                    title: 'Hyatt Inaugura Resort de Ultra-Lujo en Cap Cana',
+                    content: `
+                        <p>El nuevo Hyatt Zilara Cap Cana establece un nuevo estándar de lujo en el Caribe con 180 suites ocean-front, cada una con más de 80 m² y vistas panorámicas al mar.</p>
+                        
+                        <h6>Amenidades Destacadas:</h6>
+                        <ul>
+                            <li>Spa Zen de 2,500 m² con tratamientos únicos</li>
+                            <li>5 restaurantes con chefs medallados</li>
+                            <li>Campo de golf diseñado por Jack Nicklaus</li>
+                            <li>Marina privada para huéspedes</li>
+                            <li>Centro de bienestar con yoga y meditación</li>
+                        </ul>
+                        
+                        <p><strong>Inversión:</strong> $185 millones USD<br>
+                        <strong>Apertura:</strong> 15 de agosto, 2025<br>
+                        <strong>Empleo:</strong> 450 nuevas plazas de trabajo</p>
+                    `
+                },
+                'ballenas-2025': {
+                    title: 'Temporada de Ballenas 2025: Un Éxito Sin Precedentes',
+                    content: `
+                        <p>La Bahía de Samaná ha registrado la presencia de más de 3,000 ballenas jorobadas entre enero y marzo de 2025, superando en un 25% las cifras del año anterior.</p>
+                        
+                        <h6>Datos de la Temporada:</h6>
+                        <ul>
+                            <li><strong>Avistamientos:</strong> 98% de éxito en tours</li>
+                            <li><strong>Crías observadas:</strong> 430 ballenatos</li>
+                            <li><strong>Tours realizados:</strong> 1,250 excursiones</li>
+                            <li><strong>Turistas:</strong> 35,000 visitantes</li>
+                            <li><strong>Investigación:</strong> 12 estudios científicos activos</li>
+                        </ul>
+                          <p>El Ministerio de Medio Ambiente destaca que este éxito se debe a las estrictas medidas de conservación implementadas y la educación ambiental de operadores turísticos.</p>
+                    `
+                },
+                'pga-casa-campo': {
+                    title: 'PGA Tours Elige Teeth of the Dog para Campeonato 2026',
+                    content: `
+                        <p>El legendario campo de golf Teeth of the Dog, diseñado por Pete Dye en Casa de Campo, ha sido seleccionado como sede oficial del PGA Tours Championship 2026, marcando un hito histórico para el golf dominicano.</p>
+                        
+                        <h6>Sobre Teeth of the Dog:</h6>
+                        <ul>
+                            <li><strong>Diseñador:</strong> Pete Dye (1971)</li>
+                            <li><strong>Ranking:</strong> #1 en el Caribe y #27 mundial</li>
+                            <li><strong>Características:</strong> 7 hoyos sobre el mar Caribe</li>
+                            <li><strong>Par:</strong> 72, 6,888 yardas</li>
+                            <li><strong>Signature hole:</strong> Hoyo 5, par 3 sobre el océano</li>
+                        </ul>
+                        
+                        <h6>Detalles del Torneo:</h6>
+                        <ul>
+                            <li><strong>Fecha:</strong> 15-18 de marzo, 2026</li>
+                            <li><strong>Premio:</strong> $8.5 millones USD</li>
+                            <li><strong>Participantes:</strong> 144 golfistas profesionales</li>
+                            <li><strong>Transmisión:</strong> Golf Channel y ESPN</li>
+                        </ul>
+                        
+                        <p>Este evento posicionará a República Dominicana como destino de golf de clase mundial y se espera atraer más de 25,000 visitantes internacionales.</p>
+                    `
+                }
+            };
+
+            const article = articles[articleId];
+            if (article) {
+                // Crear modal dinámico
+                const modalHTML = `
+                    <div class="modal fade" id="articleModal" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">${article.title}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ${article.content}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <a href="contacto.html" class="btn btn-primary">Planifica tu viaje</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Remover modal existente si existe
+                const existingModal = document.getElementById('articleModal');
+                if (existingModal) {
+                    existingModal.remove();
+                }
+                
+                // Agregar modal al DOM
+                document.body.insertAdjacentHTML('beforeend', modalHTML);
+                
+                // Mostrar modal
+                const modal = new bootstrap.Modal(document.getElementById('articleModal'));
+                modal.show();
+            }
+        }
+
+        // Newsletter form
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletter-email').value;
+            
+            if (email) {
+                showAlert('¡Gracias por suscribirte! Recibirás nuestras últimas noticias en ' + email, 'success');
+                document.getElementById('newsletter-email').value = '';
+            }
+        });
+    </script>
+</body>
+</html>

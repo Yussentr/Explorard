@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadatos -->
+    <title>Destinos Turísticos en República Dominicana | Explora RD</title>
+    <meta name="description" content="Descubre los mejores destinos turísticos de República Dominicana: Punta Cana, Samaná, Santo Domingo y más. Playas paradisíacas y experiencias únicas te esperan.">
+    <meta name="keywords" content="destinos República Dominicana, Punta Cana, Samaná, Santo Domingo, playas, turismo, Caribe">
+    <meta name="author" content="Explora RD">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-bs-theme="light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-geo-alt-fill text-primary"></i> 
+                    <span class="brand-text">Explora RD</span>
+                    <small class="brand-slogan d-block d-md-inline">| Tu puerta al paraíso caribeño</small>
+                </a>
+                <div class="d-flex align-items-center order-lg-3">
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" class="btn btn-outline-secondary me-2" title="Cambiar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enlaces.html">Enlaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary rounded-pill px-3" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" style="background-image: url('https://everythingpuntacana.com/wp-content/uploads/2018/09/playa-bavaro-punta-cana.jpg'); height: 60vh;">
+            <div class="hero-content">
+                <h1>Destinos de Ensueño</h1>
+                <p class="lead">Descubre los lugares más hermosos de República Dominicana</p>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <section class="py-3 bg-light">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Destinos</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Introducción -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-title">Destinos Imperdibles</h2>
+                        <p class="lead mb-5">República Dominicana ofrece una diversidad de destinos únicos, desde playas paradisíacas hasta ciudades históricas. Cada rincón de nuestra isla caribeña tiene algo especial que ofrecer a los viajeros más exigentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinos Principales -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Nuestros Destinos Principales</h2>
+                <div class="row">
+                    <!-- Punta Cana -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="card shadow hover-effect h-100">
+                            <img src="https://www.palladiumhotelgroup.com/es/guia-turistica/republica-dominicana/santo-domingo/playas/_jcr_content/root/responsivegrid/container_copy/container/image_487618484_copy_1764701411.coreimg.jpeg/1730893352504/palladium-hotel-group-santo-domingo-playa-palenque.jpeg" class="card-img-top" alt="Punta Cana" style="height: 300px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Punta Cana</h3>
+                                <p class="card-text">El destino más popular de República Dominicana, famoso por sus 50 kilómetros de playas de arena blanca y aguas cristalinas.</p>
+                                
+                                <h6><i class="bi bi-geo-alt text-primary me-2"></i>Ubicación</h6>
+                                <p class="text-muted small">Provincia La Altagracia, Costa Este</p>
+                                
+                                <h6><i class="bi bi-star text-warning me-2"></i>Destacados</h6>
+                                <ul class="list-unstyled small">
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Playa Bávaro</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Cap Cana</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Hoyo Azul</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Isla Saona</li>
+                                </ul>
+                                
+                                <h6><i class="bi bi-activity text-info me-2"></i>Actividades</h6>
+                                <p class="text-muted small">Deportes acuáticos, golf, spa, vida nocturna, excursiones a islas</p>
+                                
+                                <div class="mt-auto">
+                                    <button class="btn btn-primary w-100" onclick="showDestinationInfo('Punta Cana')">Ver detalles completos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Samaná -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="card shadow hover-effect h-100">
+                            <img src="https://samanainn.com/uploads/0000/157/2024/07/29/pixelcut-export-1.jpeg" class="card-img-top" alt="Samaná" style="height: 300px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Samaná</h3>
+                                <p class="card-text">Un paraíso natural conocido por su belleza virgen, cascadas espectaculares y el avistamiento de ballenas jorobadas.</p>
+                                
+                                <h6><i class="bi bi-geo-alt text-primary me-2"></i>Ubicación</h6>
+                                <p class="text-muted small">Península de Samaná, Costa Norte</p>
+                                
+                                <h6><i class="bi bi-star text-warning me-2"></i>Destacados</h6>
+                                <ul class="list-unstyled small">
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Playa Rincón</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Cascada El Limón</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Cayo Levantado</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Avistamiento de ballenas</li>
+                                </ul>
+                                
+                                <h6><i class="bi bi-activity text-info me-2"></i>Actividades</h6>
+                                <p class="text-muted small">Ecoturismo, senderismo, whale watching, kayak, snorkeling</p>
+                                
+                                <div class="mt-auto">
+                                    <button class="btn btn-primary w-100" onclick="showDestinationInfo('Samaná')">Ver detalles completos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Santo Domingo -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="card shadow hover-effect h-100">
+                            <img src="https://i0.wp.com/bavarodigital.net/wp-content/uploads/2024/05/santo-domingo-ciudades-creativas-jpg.webp?resize=860%2C645&ssl=1" class="card-img-top" alt="Santo Domingo" style="height: 300px;">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Santo Domingo</h3>
+                                <p class="card-text">La primera ciudad de América, declarada Patrimonio de la Humanidad por la UNESCO, rica en historia y cultura.</p>
+                                
+                                <h6><i class="bi bi-geo-alt text-primary me-2"></i>Ubicación</h6>
+                                <p class="text-muted small">Distrito Nacional, Costa Sur</p>
+                                
+                                <h6><i class="bi bi-star text-warning me-2"></i>Destacados</h6>
+                                <ul class="list-unstyled small">
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Zona Colonial</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Catedral Primada</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Alcázar de Colón</li>
+                                    <li><i class="bi bi-check-circle text-success me-1"></i> Malecón</li>
+                                </ul>
+                                
+                                <h6><i class="bi bi-activity text-info me-2"></i>Actividades</h6>
+                                <p class="text-muted small">Tours históricos, museos, gastronomía, vida nocturna, shopping</p>
+                                
+                                <div class="mt-auto">
+                                    <button class="btn btn-primary w-100" onclick="showDestinationInfo('Santo Domingo')">Ver detalles completos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Otros Destinos -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Otros Destinos Fascinantes</h2>
+                <div class="row">
+                    <!-- Puerto Plata -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <img src="https://images.visitarepublicadominicana.org/playa-dorada-puerto-plata.jpg" class="card-img-top" alt="Puerto Plata" style="height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Puerto Plata</h5>
+                                <p class="card-text small">Costa Dorada con teleférico, fortaleza histórica y playas doradas.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showDestinationInfo('Puerto Plata')">Explorar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- La Romana -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="La Romana" style="height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title">La Romana</h5>
+                                <p class="card-text small">Casa de Campo, Altos de Chavón y la paradisíaca Isla Saona.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showDestinationInfo('La Romana')">Explorar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Barahona -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Barahona" style="height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Barahona</h5>
+                                <p class="card-text small">Playas vírgenes, montañas y el Lago Enriquillo con cocodrilos.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showDestinationInfo('Barahona')">Explorar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jarabacoa -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card shadow-sm hover-effect">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Jarabacoa" style="height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Jarabacoa</h5>
+                                <p class="card-text small">Ciudad de la eterna primavera, aventuras extremas y naturaleza.</p>
+                                <button class="btn btn-outline-primary btn-sm" onclick="showDestinationInfo('Jarabacoa')">Explorar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa Interactivo -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Mapa de Destinos</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974045.4032890415!2d-71.2516515!3d18.735693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8838def1b6f5%3A0xa6020f24060df7e0!2sRep%C3%BAblica%20Dominicana!5e0!3m2!1ses!2sus!4v1704285600000!5m2!1ses!2sus" 
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="text-center mt-3 text-muted">Explora la ubicación de todos nuestros destinos en el mapa interactivo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2>¿Listo para tu próxima aventura?</h2>
+                        <p class="lead mb-4">Contacta con nuestros expertos en turismo para crear el itinerario perfecto según tus intereses y presupuesto.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a href="contacto.html" class="btn btn-primary btn-lg me-md-2">Planifica tu viaje</a>
+                            <a href="servicios.html" class="btn btn-outline-primary btn-lg">Ver servicios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Explora RD. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="index.html" class="text-white text-decoration-none">Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        // Función específica para mostrar información de destinos
+        function showDestinationInfo(destination) {
+            const destinationInfo = {
+                'Punta Cana': {
+                    title: 'Punta Cana - Paraíso Tropical',
+                    description: 'Con más de 50 km de costas vírgenes, Punta Cana es el destino perfecto para relajarse. Sus resorts de lujo, campos de golf diseñados por arquitectos famosos y una vida nocturna vibrante lo convierten en el lugar ideal para unas vacaciones inolvidables.',
+                    highlights: ['32°C temperatura promedio', 'Más de 40 resorts de lujo', '12 campos de golf de clase mundial', 'Aeropuerto internacional propio']
+                },
+                'Samaná': {
+                    title: 'Samaná - Naturaleza Virgen',
+                    description: 'La península de Samaná es un santuario de biodiversidad. Desde enero hasta marzo, las ballenas jorobadas llegan para reproducirse, ofreciendo uno de los espectáculos naturales más impresionantes del Caribe.',
+                    highlights: ['Temporada de ballenas: Enero-Marzo', 'Cascada El Limón: 50 metros de altura', 'Playa Rincón: Una de las mejores del mundo', '90% de territorio protegido']
+                },
+                'Santo Domingo': {
+                    title: 'Santo Domingo - Cuna de América',
+                    description: 'La primera ciudad del Nuevo Mundo conserva intacta su esencia colonial. Sus calles empedradas narran 500 años de historia, mientras que su zona moderna ofrece todo el confort y entretenimiento contemporáneo.',
+                    highlights: ['Primera ciudad de América (1496)', 'Patrimonio de la Humanidad UNESCO', '3 millones de habitantes', 'Centro económico y cultural del país']
+                },
+                'Puerto Plata': {
+                    title: 'Puerto Plata - Costa Dorada',
+                    description: 'Conocida como la Costa Dorada, Puerto Plata combina historia, aventura y playas doradas. Su teleférico te lleva a la cima del Monte Isabel de Torres para vistas espectaculares.',
+                    highlights: ['Teleférico único en el Caribe', 'Fortaleza San Felipe del siglo XVI', 'Amber Cove - puerto de cruceros', 'Playa Dorada con campo de golf']
+                },
+                'La Romana': {
+                    title: 'La Romana - Lujo Caribeño',
+                    description: 'Casa de Campo es sinónimo de lujo en el Caribe. Altos de Chavón, su villa artística, recrea un pueblo mediterráneo del siglo XVI con vistas al río Chavón.',
+                    highlights: ['Casa de Campo Resort', 'Altos de Chavón - vila artística', 'Teeth of the Dog - campo de golf #1', 'Marina privada de lujo']
+                },
+                'Barahona': {
+                    title: 'Barahona - Secreto Mejor Guardado',
+                    description: 'La región suroeste mantiene su autenticidad caribeña. Sus playas vírgenes, montañas y el Lago Enriquillo ofrecen experiencias únicas lejos del turismo masivo.',
+                    highlights: ['Lago Enriquillo - bajo nivel del mar', 'Playas de piedras preciosas', 'Cocodrilos americanos', 'Ideal para ecoturismo']
+                },
+                'Jarabacoa': {
+                    title: 'Jarabacoa - Ciudad de la Eterna Primavera',
+                    description: 'En las montañas centrales, Jarabacoa ofrece un clima fresco todo el año. Es el destino perfecto para deportes extremos, senderismo y conexión con la naturaleza.',
+                    highlights: ['Temperatura promedio: 22°C', 'Pico Duarte - punto más alto del Caribe', 'Rafting en el río Yaque del Norte', 'Salto de Jimenoa - cascada espectacular']
+                }
+            };
+
+            const info = destinationInfo[destination];
+            if (info) {
+                let highlightsList = info.highlights.map(h => `<li class="list-unstyled"><i class="bi bi-check-circle text-success me-2"></i>${h}</li>`).join('');
+                
+                const alertDiv = document.createElement('div');
+                alertDiv.className = 'alert alert-primary alert-dismissible fade show position-fixed';
+                alertDiv.style.cssText = `
+                    top: 100px;
+                    right: 20px;
+                    z-index: 9999;
+                    max-width: 400px;
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+                `;
+                
+                alertDiv.innerHTML = `
+                    <h5 class="alert-heading">${info.title}</h5>
+                    <p>${info.description}</p>
+                    <hr>
+                    <h6>Datos destacados:</h6>
+                    <ul style="margin-bottom: 0;">${highlightsList}</ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                
+                document.body.appendChild(alertDiv);
+                
+                setTimeout(() => {
+                    if (alertDiv.parentNode) {
+                        alertDiv.remove();
+                    }
+                }, 10000);
+            }
+        }
+    </script>
+</body>
+</html>
